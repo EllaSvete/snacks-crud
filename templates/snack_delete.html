@@ -1,7 +1,10 @@
 {% extends 'base.html'%}
 
 {% block content %}
-<h1>Delete Snacks</h1>
+<h2>Delete Snacks</h2>
+<nav>
+  <a href="{%url 'snack_list' %}">Back to Snack List</a>
+</nav>
   <form action="" method="POST">
     {% csrf_token %}
     <p>Delete if you no longer like "{{snack.title}}"</p>

@@ -1,7 +1,10 @@
 {% extends 'base.html'%}
 
 {% block content %}
-<h1>Update Snacks</h1>
+<h2>Update Snacks</h2>
+<nav>
+  <a href="{%url 'snack_list' %}">Back to Snack List</a>
+</nav>
   <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p}}
